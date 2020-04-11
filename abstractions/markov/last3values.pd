@@ -1,0 +1,28 @@
+#N canvas 466 261 546 358 10;
+#X obj 11 121 list-abs/last-x 3;
+#X obj 16 277 unpack 0 0 0;
+#X obj 16 327 pack 0 0;
+#X obj 16 301 cyclone/sprintf %i%i;
+#X msg 11 143 \$3 \$2 \$1;
+#X obj 11 42 inlet;
+#X obj 16 351 outlet;
+#X text 12 6 we want to keep the 3 last values and store [n-2_th][n-1_th]
+as the key and [n_th] as the value;
+#X msg 153 98 0;
+#X msg 112 98 3;
+#X obj 110 69 t b b;
+#X obj 110 44 inlet;
+#X text 147 43 empty before start;
+#X connect 0 0 4 0;
+#X connect 1 0 3 0;
+#X connect 1 1 3 1;
+#X connect 1 2 2 1;
+#X connect 2 0 6 0;
+#X connect 3 0 2 0;
+#X connect 4 0 1 0;
+#X connect 5 0 0 0;
+#X connect 8 0 0 1;
+#X connect 9 0 0 1;
+#X connect 10 0 9 0;
+#X connect 10 1 8 0;
+#X connect 11 0 10 0;

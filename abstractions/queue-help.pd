@@ -1,0 +1,49 @@
+#N canvas 477 96 520 693 10;
+#X obj 36 32 queue;
+#X obj 36 633 print;
+#X obj 36 587 queue 3;
+#X obj 124 429 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 164 542 5 0 0 0 - - -;
+#X msg 144 472 clear;
+#X msg 76 382 some;
+#X floatatom 36 383 5 0 0 0 - - -;
+#X msg 134 449 flush;
+#X text 188 383 Add content;
+#X text 145 427 Retrieve the first item that went in;
+#X text 176 450 Retrieve all items;
+#X text 186 473 Clear the queue;
+#X text 33 181 If the length is set and the queue is full \, any new
+item pushes out the first item that went into the queue. If no length
+is set or length is set to zero \, the queue is infinite and items
+can only be retrieved via bang.;
+#X obj 146 633 print empty;
+#X text 202 542 Set length and clear the queue;
+#X text 33 129 The length of the queue can be set via creation argument
+or via right inlet. Setting the length via right inlet clears the queue.
+;
+#X msg 114 382 more stuff;
+#X msg 154 495 size;
+#X obj 76 633 print size;
+#X text 33 324 If the queue is empty and receives a bang \, a bang
+is send through the third outlet.;
+#X text 190 496 Get the number of items through the second outlet;
+#X text 33 64 A universal first-in \, first-out queue that takes floats
+\, symbols and lists as items to store. Messages other than symbols
+\, floats \, lists \, flush \, clear and size will be converted to
+symbols or lists.;
+#X text 33 246 A bang retrieves the first item that went into the queue
+\, a clear message clears the queue \, a flush message flushes all
+items that are in the queue and a size message outputs the current
+number of items in the queue through the second outlet.;
+#X connect 2 0 1 0;
+#X connect 2 1 19 0;
+#X connect 2 2 14 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 1;
+#X connect 5 0 2 0;
+#X connect 6 0 2 0;
+#X connect 7 0 2 0;
+#X connect 8 0 2 0;
+#X connect 17 0 2 0;
+#X connect 18 0 2 0;

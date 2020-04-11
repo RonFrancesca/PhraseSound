@@ -1,0 +1,19 @@
+#N canvas 708 300 587 322 12;
+#X obj 122 124 vsl 15 128 200 8000 0 0 fmod empty empty 0 -9 0 10 -228856
+-1 -1 4688 1;
+#X obj 143 124 vsl 15 128 1 4000 0 0 findex empty empty 0 -9 0 10 -228856
+-1 -1 6732 1;
+#X text 108 102 mod;
+#X text 140 102 index;
+#X obj 130 10 loadbang;
+#X msg 110 57 500;
+#X msg 161 57 200;
+#X obj 305 49 r fm_mod;
+#X obj 388 49 r fm_index;
+#X connect 4 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 0 0 0;
+#X connect 6 0 1 0;
+#X connect 7 0 0 0;
+#X connect 8 0 1 0;
+#X coords 0 -1 1 1 85 160 2 100 100;

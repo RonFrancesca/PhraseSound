@@ -1,0 +1,67 @@
+#N canvas 82 236 1680 1005 12;
+#X obj 275 368 maxlib/gauss, f 28;
+#X floatatom 314 301 5 0 0 3 Dev_CC_Gauss - -;
+#X floatatom 409 302 5 0 0 3 Mean_CC_Gauss - -;
+#X obj 122 370 bang;
+#X obj 518 111 loadbang;
+#X obj 355 202 f 20;
+#X obj 473 162 f 66;
+#X obj 276 416 int \$1;
+#X floatatom 511 302 5 0 0 3 CC_Number - -;
+#X obj 410 269 bng 15 250 50 0 empty empty Single_CC_Message 17 7 0
+10 -262144 -1 -1;
+#X obj 455 403 maxlib/linear;
+#X obj 455 462 int \$1;
+#X obj 314 254 vradio 15 1 0 2 empty empty empty 0 -8 0 10 -262144
+-1 -1 1;
+#X text 334 267 Linear;
+#X msg 667 418 0;
+#X obj 455 432 * 127;
+#X obj 122 346 t b;
+#X obj 122 311 r notevent;
+#X obj 631 217 inlet;
+#X obj 751 213 inlet;
+#X obj 542 217 inlet;
+#X obj 405 217 inlet;
+#X text 767 137 Dev_CC_Gauss and Mean_CC_Gauss is only used when the
+kind of distribution selected is gaussian.;
+#X text 24 26 Everytime the main patch send a note a random value for
+the controller a notevent is sent. This patch receives that notevent
+and create a random control value.;
+#X obj 441 491 zexy/multiplex;
+#X obj 441 593 pack 0 0;
+#X obj 441 631 s midi_cc_markov;
+#X text 338 254 Gauss;
+#X obj 667 449 t b f;
+#X obj 441 529 t b f;
+#X connect 0 0 7 0;
+#X connect 1 0 0 1;
+#X connect 2 0 0 2;
+#X connect 3 0 0 0;
+#X connect 3 0 10 0;
+#X connect 4 0 5 0;
+#X connect 4 0 6 0;
+#X connect 4 0 8 0;
+#X connect 5 0 1 0;
+#X connect 6 0 2 0;
+#X connect 7 0 24 0;
+#X connect 8 0 25 0;
+#X connect 9 0 14 0;
+#X connect 10 0 15 0;
+#X connect 11 0 24 1;
+#X connect 12 0 24 2;
+#X connect 14 0 28 0;
+#X connect 15 0 11 0;
+#X connect 16 0 3 0;
+#X connect 17 0 16 0;
+#X connect 18 0 12 0;
+#X connect 19 0 8 0;
+#X connect 20 0 2 0;
+#X connect 21 0 1 0;
+#X connect 24 0 29 0;
+#X connect 25 0 26 0;
+#X connect 28 0 25 0;
+#X connect 28 1 25 1;
+#X connect 29 0 25 0;
+#X connect 29 1 25 1;
+#X coords 0 -1 1 1 270 100 2 307 244;

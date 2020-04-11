@@ -1,0 +1,87 @@
+<html>	
+<title>Sound meaning</title>
+<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='style.css') }}"/>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<svg class="triangle-canvas" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+			<polygon class="triangle triangle-1" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-2" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-3" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-4" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-5" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-6" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-7" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-8" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-9" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-10" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-11" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-12" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-13" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-14" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-15" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-16" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-17" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-18" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-19" points="500,200 759,650 241,650" />
+			<polygon class="triangle triangle-20" points="500,200 759,650 241,650" />
+		</svg>
+	</div>
+	<div class="central_block">
+		<div id="centralheading">
+			<h1>
+				How your phrases sound?
+			</h1>
+		</div>
+		<div id="inputbox">
+		<p id="writehere">Write here: </p><input autocomplete="off" id="texttosend" name="sentence" id="sentence" type="text"  /><br /><br />
+		</div>
+	<button id="sendbutton">Send </button>
+	<br/>
+	<div id="results" class="frame">
+	<!-- All data will display here  -->
+	</div>
+</div>
+</body>
+<script>
+	$("#sendbutton").click(
+		function(){
+			var text = $("#texttosend").val();
+			text = text.trim()
+			spaceCount = (text.split(" ").length - 1); 
+			if (spaceCount > 0){
+				$.ajax({
+					url: '/parse',
+					data: { text: text},
+					method: 'POST',
+					success: function(a, e, d){
+						if(a == "fail"){
+							$("#results").append("Something is wrong in this sentence: " + text);
+						}else{
+							$("#results").append(text);
+						}
+						$("#results").append("<br/>");
+						$("#texttosend").val('');
+					},
+				});
+			}else{
+				$("#results").append("Use more than one word only!: " + text);
+				$("#results").append("<br/>");
+				$("#texttosend").val('');
+			}
+
+			var element = document.getElementById("results");
+			element.scrollTop = element.scrollHeight;
+		}
+	);
+
+	$(document).keypress(function(e){
+		if (e.which == 13){
+			$("#sendbutton").click();
+		}
+	});
+
+</script>
+</html>

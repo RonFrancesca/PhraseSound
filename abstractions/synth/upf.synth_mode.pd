@@ -1,0 +1,12 @@
+#N canvas 0 23 749 568 12;
+#X obj 105 131 vradio 40 1 0 3 mode in_synth_mode empty 0 -8 0 10 -262144
+-1 -1 0;
+#X text 151 141 additive;
+#X text 153 184 fm;
+#X text 151 225 subtractive;
+#X text 147 105 mode;
+#X obj 109 25 loadbang;
+#X msg 108 50 0;
+#X connect 5 0 6 0;
+#X connect 6 0 0 0;
+#X coords 0 -1 1 1 140 160 2 100 100;

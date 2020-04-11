@@ -1,0 +1,24 @@
+#N canvas 402 201 555 399 12;
+#X obj 46 100 vsl 20 128 20 600 0 0 empty empty empty 0 -9 0 10 -162280
+-1 -1 1752 1;
+#X floatatom 35 237 5 0 0 0 - - -;
+#X obj 72 100 vsl 20 128 20 600 0 0 empty empty empty 0 -9 0 10 -162280
+-1 -1 1752 1;
+#X floatatom 76 237 5 0 0 0 - - -;
+#X text 35 254 ms;
+#X text 73 257 ms, f 4;
+#X obj 115 296 s release_time;
+#X obj 11 295 s attack_time;
+#X text 53 60 adsr;
+#X text 51 80 a;
+#X text 74 80 r;
+#X obj 58 -7 loadbang;
+#X msg 58 21 100;
+#X connect 0 0 1 0;
+#X connect 1 0 7 0;
+#X connect 2 0 3 0;
+#X connect 3 0 6 0;
+#X connect 11 0 12 0;
+#X connect 12 0 0 0;
+#X connect 12 0 2 0;
+#X coords 0 -1 1 1 85 264 2 30 50;
