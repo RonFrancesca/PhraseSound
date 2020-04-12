@@ -44,6 +44,8 @@ $ pip install numpy scipy gensim python-osc
 
 ### Pure Data instruction
 
+Please, refer to this link for more information about Pure Data and how to install it: https://puredata.info/ 
+
 
 ## Clone or Download the repository 
 
@@ -73,7 +75,7 @@ $ export FLASK_APP=web
 $ flask run
 ```
 
-The web application is now up and running at the 127.0.0.1:5000 or 0.0.0.0:5000
+The web application is now up and running at the 127.0.0.1:5000 or 0.0.0.0:5000. 
 
 Type your sentence and enjoy exploring the sound!
 
