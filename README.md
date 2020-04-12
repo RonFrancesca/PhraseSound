@@ -47,9 +47,6 @@ $ pip install numpy scipy gensim python-osc
 
 ## Clone or Download the repository 
 
-Clone or download the repository. 
-It contains a jupyter notebook, please read Jupyter Notebook instruction to properly change directories paths and run the notebook correctly.
-
 Command to clone the repository:
 ```
 $ git clone https://github.com/RonFrancesca/PhraseSound.git
