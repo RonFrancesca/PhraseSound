@@ -18,6 +18,8 @@ In order to run the code you need a copy of two files:
 Due to size file limits, these files can be asked to the authors. 
 The glove.6B.50d_word2vec.txt can also be downloaded from this link: https://www.kaggle.com/watts2/glove6b50dtxt
 
+-------------------------------------------------------------------------------------------------------------------
+
 Python and the following modules are necessary to run the notebook correctly: numpy, scipy, gensim, python-osc. 
 
 You can install the modules required simply typing on the terminal the following command: 
