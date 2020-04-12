@@ -47,7 +47,7 @@ It contains a jupyter notebook, please read Jupyter Notebook instruction to prop
 
 Command to clone the repository:
 ```
-$ git clone https://github.com/RonFrancesca/makam_research.git
+$ git clone https://github.com/RonFrancesca/PhraseSound.git
 ```
 
 The dataset can be downlaoded at the following links:
