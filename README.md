@@ -52,10 +52,6 @@ Command to clone the repository:
 $ git clone https://github.com/RonFrancesca/PhraseSound.git
 ```
 
-The dataset can be downlaoded at the following links:
-- download the full pdf score dataset here: https://github.com/MTG/SymbTr-pdf 
-- download the full xml files dataset here: https://github.com/MTG/SymbTr/releases/tag/v2.4.3
-
 
 ### Jupyter Notebook instructions
 Install Jupyter Notebook according to the its instructions https://jupyter.org/install
@@ -66,7 +62,7 @@ Start up jupyter notebook
 $ jupyter notebook
 ```
 
-Follow instructions appearing in the console regarding navigating your browser to the notebook
+Follow the instructions appearing in the console regarding navigating your browser to the notebook
 
 
 ## Authors 
