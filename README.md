@@ -42,10 +42,10 @@ In **Windows** the user can refer to this link to install python on your local m
 $ pip install numpy scipy gensim python-osc
 ```
 
-## Pure Data instruction
+### Pure Data instruction
 
 
-### Clone or Download the repository 
+## Clone or Download the repository 
 
 Clone or download the repository. 
 It contains a jupyter notebook, please read Jupyter Notebook instruction to properly change directories paths and run the notebook correctly.
@@ -65,7 +65,7 @@ The repository constist of multiple folders:
   Inside this folder need to be added also the two files which need to be requested to the authors in order to make the system work. 
 - **PhraseSound_Server**: *upf.sonificador.pd* which si the Pure Data audio engine to generate sound. Please, do not move the file ((if you do it you will also need to change the paths for the abtraction and externals folders, inside the pd osc patch inside the upf.sonificador.pd patch)
 
-### Running the code
+## Running the code
 
 
 
