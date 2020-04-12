@@ -19,6 +19,7 @@ class OSCClient:
         self.port = int(port)
         
         try:
+            #initialization of client
             self.client = SimpleUDPClient(self.ip, self.port)  
         except Exception as e:
             print('Client could not be created \n {}'.format(e))  
@@ -32,7 +33,7 @@ class OSCClient:
             :distance: distance between words to be sent to the osc server (Pure Data)
         '''
 
-        # Send distances message
+        # Send distances OSC messages
         try:
             self.client.send_message("/distance", distance)  
         except Exception as e:
@@ -45,7 +46,7 @@ class OSCClient:
         '''
         Parameters:
         ------------
-            :trigger: trigger to be sent to server. 1 (start conversation) if the messaage will start to be sent, 0 (stop conversation) if all the message have been sent 
+            :trigger: trigger to be sent to server. 1 (start conversation, the OSC messaages will start to be sent), 0 (stop conversation, all the OSC messages have been sent) 
         '''
         #send trigger message
         try:
