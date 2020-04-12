@@ -55,7 +55,8 @@ $ git clone https://github.com/RonFrancesca/PhraseSound.git
 The repository constist of multiple folders: 
 - **abstraction**: folder with Pure Data Patch used by the Pure Data audio engine to generate sound. Please, do not move the folder (if you do it you will also need to change the path in the upf.sonificator.pd patch, inside the pd osc patch)
 - **externals**: folder with Pure Data Patch used by the Pure Data audio engine to generate sound. Please, do not move the folder (if you do it you will also need to change the path in the upf.sonificator.pd patch, inside the pd osc patch)
-- **PhraseSound_Client**: 
+- **PhraseSound_Client**: it contains the main.py script and three other folders:
+  - hei
 - **PhraseSound_Server**: 
 
 
