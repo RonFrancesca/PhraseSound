@@ -64,7 +64,18 @@ The repository constist of multiple folders:
 
 ## Running the code
 
+Open the PhraseSound_Server/upf.sonificador.pd patch. 
 
+Typing on the terminal the following commands: 
+```
+$ cd PhraseSound_Client/web
+$ export FLASK_APP=web
+$ flask run
+```
+
+The web application is now up and running at the 127.0.0.1:5000 or 0.0.0.0:5000
+
+Type your sentence and enjoy exploring the sound!
 
 ### Jupyter Notebook instructions
 Install Jupyter Notebook according to the its instructions https://jupyter.org/install
