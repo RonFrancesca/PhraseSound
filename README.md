@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Python and the following modules are necessary to run the notebook correctly: numpy, scipy. 
+Python and the following modules are necessary to run the notebook correctly: numpy, scipy, gensim, python-osc. 
 
 You can install the modules required simply typing on the terminal the following command: 
 
@@ -25,20 +25,21 @@ Otherwise, you can manually install the single modules with the following comman
 In Ubuntu the user can install all these modules it is as simple as typing on the terminal:
 ```
 $ sudo apt-get install python-dev python-numpy python-scipy 
-$ pip install gensim 
+$ pip install gensim
+$ pip install python-osc
 ```
 
 In OSX the user can install these modules by typing on the terminal:
 
 ```
 $ brew install python
-$ pip install numpy scipy gensim
+$ pip install numpy scipy gensim python-osc
 ````
 
 In Windows the user can refer to this link to install python on your local machine: https://docs.python.org/3/using/windows.html and install the other modules by typing on the terminal: 
 
 ```
-$ pip install numpy scipy gensim 
+$ pip install numpy scipy gensim python-osc
 ```
 
 ### Clone or Download the repository 
