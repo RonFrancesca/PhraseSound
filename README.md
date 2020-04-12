@@ -55,8 +55,10 @@ $ git clone https://github.com/RonFrancesca/PhraseSound.git
 The repository constist of multiple folders: 
 - **abstraction**: folder with Pure Data Patch used by the Pure Data audio engine to generate sound. Please, do not move the folder (if you do it you will also need to change the path in the upf.sonificator.pd patch, inside the pd osc patch)
 - **externals**: folder with Pure Data Patch used by the Pure Data audio engine to generate sound. Please, do not move the folder (if you do it you will also need to change the path in the upf.sonificator.pd patch, inside the pd osc patch)
-- **PhraseSound_Client**: it contains the main.py script and three other folders:
-  - hei
+- **PhraseSound_Client**: it contains the *main.py* script and three other folders:
+  - **osc**: *osc_client.py* script which handle the comunication between client and server
+  - **web**: *web.py* scripty which implement the Flask application, and two other folders, **static** which contains the *style.css* file and **templates** which contains the *index_basic.html* file. Please, do not move those two folders. 
+  - **words2midi**:
 - **PhraseSound_Server**: 
 
 
