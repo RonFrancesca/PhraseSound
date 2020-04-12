@@ -42,6 +42,9 @@ In **Windows** the user can refer to this link to install python on your local m
 $ pip install numpy scipy gensim python-osc
 ```
 
+## Pure Data instruction
+
+
 ### Clone or Download the repository 
 
 Clone or download the repository. 
@@ -61,6 +64,9 @@ The repository constist of multiple folders:
   - **words2midi**: *w2midi.py* script, which it is in charge of calculating the distance between words, and two jupyter notebooks that the user can use as example in order to understand how the mapping between words and MIDI values work. Refer to the Jupyter Notebook instructions for how to install and use Jupyter notebook. 
   Inside this folder need to be added also the two files which need to be requested to the authors in order to make the system work. 
 - **PhraseSound_Server**: *upf.sonificador.pd* which si the Pure Data audio engine to generate sound. Please, do not move the file ((if you do it you will also need to change the paths for the abtraction and externals folders, inside the pd osc patch inside the upf.sonificador.pd patch)
+
+### Running the code
+
 
 
 ### Jupyter Notebook instructions
