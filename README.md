@@ -5,6 +5,8 @@ PhraseSound is an interactive web application which make users able to listen to
 [1]:
 > T. Mikolov, K. Chen, G. Corrado, and J. Dean.Efficient estimation of word representations in vectorspace, 2013
 
+More information about this project can be found in the NAME.pdf file: LINK TO
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
