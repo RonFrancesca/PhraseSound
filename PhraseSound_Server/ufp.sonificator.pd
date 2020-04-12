@@ -1,4 +1,4 @@
-#N canvas 503 73 757 601 12;
+#N canvas 818 81 757 601 12;
 #X declare -path ./../abstractions;
 #X declare -path ./../abstractions/drum_machine;
 #X declare -path ./../abstractions/synth;
@@ -97,8 +97,6 @@ H13.butterworth.pd in this series.;
 #X connect 17 0 12 2;
 #X restore 561 560 pd engine;
 #X obj 430 344 upf.master_output~;
-#X text 9 7 Bertola / Ronchini / Fernandez https://github.com/marcobertola/upf-cmc
-, f 82;
 #X obj 14 42 cnv 15 720 290 empty empty empty 20 12 0 14 -66577 -66577
 0;
 #X obj 19 48 cnv 15 710 278 empty empty empty 20 12 0 14 -261234 -66577
@@ -107,7 +105,7 @@ H13.butterworth.pd in this series.;
 #X obj 438 57 upf.delay_ui;
 #X obj 576 58 upf.fm_ui;
 #X obj 326 342 upf.mixer_synth;
-#N canvas 56 65 1619 963 osc 0;
+#N canvas 56 23 1619 963 osc 0;
 #X obj 46 177 oscparse;
 #X obj 46 206 list trim;
 #X msg 45 67 listen 1337;
@@ -308,3 +306,5 @@ H13.butterworth.pd in this series.;
 #X restore 692 560 pd osc;
 #X obj 17 344 upf.sequencer_mixer_v2;
 #X obj 24 57 upf.additive_ui;
+#X text 9 7 Bertola / Ronchini / Fernandez https://github.com/RonFrancesca/PhraseSound
+, f 82;
