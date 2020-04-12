@@ -25,19 +25,20 @@ Otherwise, you can manually install the single modules with the following comman
 In Ubuntu the user can install all these modules it is as simple as typing on the terminal:
 ```
 $ sudo apt-get install python-dev python-numpy python-scipy 
+$ pip install gensim 
 ```
 
 In OSX the user can install these modules by typing on the terminal:
 
 ```
 $ brew install python
-$ pip install numpy scipy
+$ pip install numpy scipy gensim
 ````
 
 In Windows the user can refer to this link to install python on your local machine: https://docs.python.org/3/using/windows.html and install the other modules by typing on the terminal: 
 
 ```
-$ pip install numpy scipy
+$ pip install numpy scipy gensim 
 ```
 
 ### Clone or Download the repository 
