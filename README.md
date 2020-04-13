@@ -17,8 +17,10 @@ In order to run the code you need a copy of two files:
 - *mappying.npy*: file containing the words mapping
 - *glove.6B.50d_word2vec.txt*: txt file with words and words dimensions. 
 
+https://drive.google.com/open?id=1S9VAC7spomtezESdmjGrGR5cuJ204TCC
+
 Due to size file limits, these files can be asked to the authors. 
-The glove.6B.50d_word2vec.txt can also be downloaded from this link: https://www.kaggle.com/watts2/glove6b50dtxt
+The *glove.6B.50d_word2vec.txt* can also be downloaded from this link: https://www.kaggle.com/watts2/glove6b50dtxt
 
 -------------------------------------------------------------------------------------------------------------------
 
