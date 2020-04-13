@@ -1,9 +1,10 @@
 # PhraseSound
 
-PhraseSound is an interactive web application which make users able to listen to a particular sound related to words or phrases. The system is based on a Flask web application, which allows the user to type down the words or sentence he will to listen the sound of, while the sound is generated  by a Pure Data audio engine. The  communication between the two systems is based on Open Sound Control messages. The mapping between the phrase and the sounds depends on the distance between two consecutive words of the phrase in an embedding space (word2vec [1] has beenused  for  this  project). Two same consecutive  words  will generate the same sound, the distance being zero. Two different consecutive words will generate different  sounds, which will change according to how distant their are in the word embedding space. 
+PhraseSound is an interactive web application which makes users able to listen to a particular sound generated in real-time according to an input phrase. The aim of the project is to synthesize similar sounds for similar sentences taking advantage of the *word embedding* space. Thanks to this representation, each word can be represented as a point in a multi-dimensional space and, consequently, it is possible to compute similarity between words using distances. The main motivation of the study is to create a connection between written language and musical sounds, emphasizing the music role of *universal language*.
 
-[1]:
-> T. Mikolov, K. Chen, G. Corrado, and J. Dean.Efficient estimation of word representations in vectorspace, 2013
+The system is a client-server architecture where the client is based on a Flask web application which allows the user to type down words or sentences he desires to listen the sound of and processes distances between words. The audio engine, working as server-side and developed in Pure Data, gathers and processes all the incoming information sent by the client using *Open Sound Control (OSC)* messages.
+
+Limitations such as semantic context and integration of the Pure Data audio engine into the web, between others, are suggested as future works to be addressed.  
 
 More information about this project can be found in the NAME.pdf file: LINK TO
 
