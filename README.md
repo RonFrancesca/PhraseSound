@@ -80,7 +80,7 @@ The repository contains the following folders:
 
 Open the PhraseSound_Server/upf.sonificador.pd patch. 
 
-Typing on the terminal the following commands: 
+Open a terminal and type the following commands: 
 ```
 $ cd PhraseSound_Client/web
 $ export FLASK_APP=web
