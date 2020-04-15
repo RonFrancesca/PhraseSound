@@ -100,7 +100,7 @@ Start up jupyter notebook
 $ jupyter notebook
 ```
 
-Follow the instructions appearing in the console regarding navigating your browser to the notebook
+Follow the instructions appearing in the console regarding navigating your browser to the notebook.
 
 
 ## Authors 
