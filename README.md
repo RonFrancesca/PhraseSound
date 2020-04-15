@@ -70,11 +70,11 @@ The repository contains the following folders:
 - **abstraction**: folder with Pure Data Patch used by the Pure Data audio engine to generate sound. Please, do not move the folder (if you do it you will also need to change the path in the upf.sonificator.pd patch, inside the pd osc patch)
 - **externals**: folder with Pure Data Patch used by the Pure Data audio engine to generate sound. Please, do not move the folder (if you do it you will also need to change the path in the upf.sonificator.pd patch, inside the pd osc patch)
 - **PhraseSound_Client**: it contains the *main.py* script and three other folders:
-  - **osc**: *osc_client.py* script which handle the comunication between client and server
+  - **osc**: *osc_client.py* script which handle the comunication between client and server.
   - **web**: *web.py* scripty which implement the Flask application, and two other folders, **static** which contains the *style.css* file and **templates** which contains the *index_basic.html* file. Please, do not move those two folders. 
-  - **words2midi**: *w2midi.py* script, which it is in charge of calculating the distance between words, and two jupyter notebooks that the user can use as example in order to understand how the mapping between words and MIDI values work. Refer to the Jupyter Notebook instructions for how to install and use Jupyter notebook. 
-  Inside this folder need to be added also the two files which need to be requested to the authors in order to make the system work. 
-- **PhraseSound_Server**: *upf.sonificador.pd* which si the Pure Data audio engine to generate sound. Please, do not move the file ((if you do it you will also need to change the paths for the abtraction and externals folders, inside the pd osc patch inside the upf.sonificador.pd patch)
+  - **words2midi**: *w2midi.py* script, which it is in charge of calculating the distance between words, and two jupyter notebooks that the user can use as example in order to understand how the mapping between words and MIDI values work. Refer to the Jupyter Notebook instructions for how to install and use it. 
+  Inside this folder need to be added also the two files which need to be downloaded or requested to the authors in order to make the system work. 
+- **PhraseSound_Server**: *upf.sonificador.pd* which si the Pure Data audio engine to generate sound. Please, do not move the file (if you do it you will also need to change the paths for the abtraction and externals folders, inside the pd osc patch inside the upf.sonificador.pd patch)
 
 ## Running the code
 
