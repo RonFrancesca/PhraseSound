@@ -34,7 +34,7 @@ $ pip install -r requirements.txt
 
 Otherwise, you can manually install the single modules with the following commands.  
 
-In **Ubuntu** the user can install all these modules as simple as typing on the terminal:
+In **Ubuntu** the user can install all these modules typing on the terminal:
 ```
 $ sudo apt-get install python-dev python-numpy python-scipy 
 $ pip install gensim
