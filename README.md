@@ -89,7 +89,7 @@ $ flask run
 
 The web application is now up and running at the 127.0.0.1:5000 or 0.0.0.0:5000. 
 
-Type your sentence and enjoy exploring the sound!
+Type your sentence in the input box and enjoy exploring the sound!
 
 ### Jupyter Notebook instructions
 Install Jupyter Notebook according to the its instructions https://jupyter.org/install
