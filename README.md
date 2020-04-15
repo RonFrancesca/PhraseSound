@@ -4,8 +4,6 @@ PhraseSound is an interactive web application which makes users able to listen t
 
 The system is a client-server architecture where the client is based on a Flask web application which allows the user to type down words or sentences he desires to listen the sound of and processes distances between words. The audio engine, working as server-side and developed in Pure Data, gathers and processes all the incoming information sent by the client using *Open Sound Control (OSC)* messages.
 
-Limitations such as semantic context and integration of the Pure Data audio engine into the web, between others, are suggested as future works to be addressed.  
-
 More information about this project can be found in the NAME.pdf file: LINK TO
 
 ## Getting Started
